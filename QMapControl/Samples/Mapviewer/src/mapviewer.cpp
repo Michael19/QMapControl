@@ -20,6 +20,8 @@ Mapviewer::Mapviewer(QWidget* parent)
     // Create/add a layer with the default OSM map adapter.
     m_map_control->addLayer(std::make_shared<LayerMapAdapter>("OpenStreetMap-Layer", std::make_shared<MapAdapterOSM>()));
 
+
+
     // Show QMapControl in QMainWindow.
     setCentralWidget(m_map_control);
 }
